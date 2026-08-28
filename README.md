@@ -35,13 +35,25 @@ A lower Brier score indicates more accurate probability estimates. Final model s
 
 | Metric | Result |
 |---|---:|
-| ROC-AUC | **[add after Stage 4]** |
-| PR-AUC | **[add after Stage 4]** |
-| Brier score | **[add after Stage 4]** |
-| Precision | **[add after Stage 4]** |
-| Recall | **[add after Stage 4]** |
-| F1-score | **[add after Stage 4]** |
-| Selected threshold | **[add after Stage 4]** |
+| ROC-AUC | **0.7662** |
+| PR-AUC | **0.2518** |
+| Brier score | **0.0674** |
+| Precision | **0.2518** |
+| Recall | **0.4213** |
+| F1-score | **0.3152** |
+| Selected threshold | **0.15** |
+| Business cost | **20,581** |
+
+At the selected threshold, the model produced the following results on the test set:
+
+- 2,092 correctly detected defaults;
+- 2,873 missed defaults;
+- 6,216 reliable clients incorrectly classified as high-risk;
+- 50,322 reliable clients correctly classified.
+
+The selected threshold detected approximately **42.1%** of defaulting clients. Among applications classified as high-risk, approximately **25.2%** actually defaulted.
+
+The validation and test results were similar, indicating no substantial deterioration in performance on previously unseen data.
 
 ## Dataset
 
@@ -184,8 +196,8 @@ credit-risk-scoring/
 Clone the repository:
 
 ```bash
-git clone https://github.com/USERNAME/credit-risk-scoring.git
-cd credit-risk-scoring
+git clone https://github.com/Iluxa-58/Credit_risk_scoring.git
+cd Credit_risk_scoring
 ```
 
 Create and activate a virtual environment:
@@ -266,5 +278,5 @@ Future work may include:
 
 HSE University student focused on Data Science, Machine Learning, and Data Analytics.
 
-- GitHub: [Iluxa-58]
-- LinkedIn: [add LinkedIn profile]
+- GitHub: [github.com/Iluxa-58](https://github.com/Iluxa-58)
+- LinkedIn: [Ilya Klimashin](https://www.linkedin.com/in/%D0%B8%D0%BB%D1%8C%D1%8F-%D0%BA%D0%BB%D0%B8%D0%BC%D0%B0%D1%88%D0%B8%D0%BD-932506396/)
